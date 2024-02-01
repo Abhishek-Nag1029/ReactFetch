@@ -1,0 +1,42 @@
+/* Styling for User card */
+.user-card {
+  width: 20%;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  color: #fff; /* Text color */
+  background-color: #3498db; /* Background color - Blue */
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+/* Hover effect for User card */
+.user-card:hover {
+  transform: scale(1.05);
+}
+
+/* Styling for spans within cards */
+.user-card span {
+  display: block;
+  font-size: 1.4em; /* Adjusted font size for main text */
+  margin-bottom: 8px;
+  transition: color 0.3s ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Styling for address spans within cards */
+.user-card .address span {
+  font-size: 1.2em; /* Adjusted font size for address */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.user-card .address span::before {
+  content: '📍 ';
+  margin-right: 5px;
+}
